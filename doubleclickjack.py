@@ -67,8 +67,10 @@ html = f'''
             }}
 
             function startAttack() {{
-                logAction("Test started. Opening simulated cookie consent pop-up...");
+                logAction("Test started. Redirecting parent page to target page...");
+                window.location = '{url}';
 
+                logAction("Opening simulated cookie consent pop-up...");
                 // Open a simulated cookie consent pop-up
                 const attackerWindow = window.open('', 'attackerWindow', 'width=400,height=300');
                 attackerWindow.document.write(`
@@ -101,11 +103,11 @@ html = f'''
                     <body>
                         <h2>Cookie Consent</h2>
                         <p>Double-click "Accept Cookies" to continue.</p>
-                        <button ondblclick="
+                        <button onclick="
                             try {{
                                 if (window.opener) {{
-                                    window.opener.logAction('User double-clicked Accept Cookies. Redirecting parent window to the target page...');
-                                    window.opener.location = '{url}';
+                                    // window.opener.logAction('User double-clicked Accept Cookies. Redirecting parent window to the target page...');
+                                    window.close();
                                 }}
                             }} catch (e) {{
                                 alert('Error: Unable to communicate with parent window.');

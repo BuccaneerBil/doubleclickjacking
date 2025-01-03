@@ -47,3 +47,6 @@ This script is provided for educational purposes only. Use it responsibly and on
 1. A "Start DoubleClickjacking Test" button appears.
 2. Clicking it opens a simulated cookie consent pop-up.
 3. Double-clicking the "Accept Cookies" button triggers redirection to the target page or simulates a critical action.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

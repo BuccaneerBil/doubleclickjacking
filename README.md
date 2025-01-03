@@ -41,7 +41,7 @@ This script is provided for educational purposes only. Use it responsibly and on
 
 ### Example Usage
 
-1. Clone the repository:
+1. Run script:
    ```bash
    python3 doubleclickjack.py https://example.com
 1. A "Start DoubleClickjacking Test" button appears.

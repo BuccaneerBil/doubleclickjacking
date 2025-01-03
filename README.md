@@ -31,5 +31,19 @@ This script demonstrates the DoubleClickjacking attack flow for educational and 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/doubleclickjacking.git
+   git clone https://github.com/BuccaneerBil/doubleclickjacking.git
    cd doubleclickjacking
+
+
+### Disclaimer
+
+This script is provided for educational purposes only. Use it responsibly and only on systems you have explicit permission to test. The author is not responsible for misuse or any damage caused by the improper use of this script.
+
+### Example Usage
+
+1. Clone the repository:
+   ```bash
+   python3 doubleclickjack.py https://example.com
+1. A "Start DoubleClickjacking Test" button appears.
+2. Clicking it opens a simulated cookie consent pop-up.
+3. Double-clicking the "Accept Cookies" button triggers redirection to the target page or simulates a critical action.
